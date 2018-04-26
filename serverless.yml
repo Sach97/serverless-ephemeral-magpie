@@ -1,13 +1,5 @@
 service: serverless-ephemeral-tensorflow
 
-provider:
-  name: aws
-  runtime: python3.6
-
-functions:
-  hello:
-    handler: handler.main
-
 plugins:
   - serverless-ephemeral
 
@@ -17,3 +9,24 @@ package:
     - package-lock.json
     - node_modules/**
     - .ephemeral/**
+    - magpie-packager/**
+
+custom:
+  ephemeral:
+    libraries:
+      - packager:
+        compose: docker/docker-compose.yml
+        service: magpie
+        output: /tmp/libs/text-classification.zip
+      directory: text-classification
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: dev
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.main
+

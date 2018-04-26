@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "testing ephemeral",
   "main": "handler.py",
-  "dependencies": {},
+  "dependencies": {
+    "serverless": "^1.26.1"
+  },
   "devDependencies": {
     "serverless-ephemeral": "^0.8.0"
   },

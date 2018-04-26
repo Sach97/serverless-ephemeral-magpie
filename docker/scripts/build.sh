@@ -41,4 +41,4 @@ done
 # Zip libraries
 output=/tmp/libs
 mkdir -p ${output}
-zip -r9q ${output}/magpie.zip *
+zip -r9q ${output}/text-classification.zip *
