@@ -1,0 +1,23 @@
+{
+  "name": "serverless-ephemeral-tensorflow",
+  "version": "1.0.0",
+  "description": "testing ephemeral",
+  "main": "handler.py",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-ephemeral": "^0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sach97/serverless-ephemeral-magpie.git"
+  },
+  "author": "Sacha Arbonel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Sach97/serverless-ephemeral-magpie/issues"
+  },
+  "homepage": "https://github.com/Sach97/serverless-ephemeral-magpie#readme"
+}
